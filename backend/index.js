@@ -12,7 +12,7 @@ import reviewRouter from "./routes/review.route.js";
 
 dotenv.config();
 
-let port = process.env.PORT;
+let port = process.env.PORT || 5000;
 
 let app = express();
 
