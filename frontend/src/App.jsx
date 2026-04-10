@@ -25,7 +25,7 @@ import SearchWithAi from './pages/SearchWithAi'
 import getAllReviews from './customHooks/getAllReviews'
 import { Navigate,  Route,  Routes } from 'react-router-dom'
 
-export const serverUrl = "http://localhost:8000"
+export const serverUrl = process.env.VITE_API_BASE_URL;
 
 function App() {
   let { userData } = useSelector(state => state.user)
